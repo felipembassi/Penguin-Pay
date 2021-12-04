@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  PenguinPay
+//
+//  Created by Felipe Moreira Tarrio Bassi on 04/12/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+OPEN_EXCHANGE_KEY=52c7066231b845cfb8e0399faf92f7c5
