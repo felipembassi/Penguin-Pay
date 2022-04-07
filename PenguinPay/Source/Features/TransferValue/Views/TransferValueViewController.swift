@@ -180,7 +180,7 @@ class TransferValueViewController: UIViewController {
         
         view.addSubview(receivingValueTitleLabel)
         NSLayoutConstraint.activate([
-            receivingValueTitleLabel.topAnchor.constraint(equalTo: sendingValueTitleLabel.bottomAnchor, constant: .spacing(.medium)),
+            receivingValueTitleLabel.topAnchor.constraint(equalTo: sendingValueLabel.bottomAnchor, constant: .spacing(.medium)),
             receivingValueTitleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: .spacing(.medium)),
         ])
         

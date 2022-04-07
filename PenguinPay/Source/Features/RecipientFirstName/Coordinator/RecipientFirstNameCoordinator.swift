@@ -8,19 +8,17 @@
 import UIKit
 
 class RecipientFirstNameCoordinator: Coordinator {
-    weak var parentCoordinatorDelegate: RecipientFirstNameCoordinatorDelegate?
+    var viewModel: RecipientFirstNameViewModelProtocol
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
-    init(navigationController: UINavigationController, parentCoordinatorDelegate: RecipientFirstNameCoordinatorDelegate) {
+    init(navigationController: UINavigationController, viewModel: RecipientFirstNameViewModelProtocol) {
         self.navigationController = navigationController
-        self.parentCoordinatorDelegate = parentCoordinatorDelegate
+        self.viewModel = viewModel
     }
     
     func start() {
-        let viewModel = RecipientFirstNameViewModel(coordinatorDelegate: parentCoordinatorDelegate)
         let viewController = RecipientFirstNameViewController(viewModel: viewModel)
-        
         navigationController.pushViewController(viewController, animated: true)
     }
 }

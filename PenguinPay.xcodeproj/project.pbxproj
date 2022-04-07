@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945B2A2627FE79EA00045721 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B2A2527FE79EA00045721 /* MainCoordinatorTests.swift */; };
+		945B2A2A27FE91CB00045721 /* RecipientFirstNameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B2A2927FE91CB00045721 /* RecipientFirstNameViewModelTests.swift */; };
+		945B2A2D27FEB98400045721 /* RecipientLastNameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B2A2C27FEB98400045721 /* RecipientLastNameViewModelTests.swift */; };
 		94CAFD5C275B458B0040C3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFD5B275B458B0040C3B1 /* AppDelegate.swift */; };
 		94CAFD5E275B458B0040C3B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFD5D275B458B0040C3B1 /* SceneDelegate.swift */; };
 		94CAFD65275B458D0040C3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CAFD64275B458D0040C3B1 /* Assets.xcassets */; };
@@ -30,31 +33,26 @@
 		94CAFDB2275B47B40040C3B1 /* OpenExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFDB1275B47B40040C3B1 /* OpenExchangeRates.swift */; };
 		94CAFDB4275B4A090040C3B1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94CAFDB3275B4A090040C3B1 /* Localizable.strings */; };
 		94CAFDFB275B4B2B0040C3B1 /* RecipientFirstNameCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFDFA275B4B2B0040C3B1 /* RecipientFirstNameCoordinatorDelegate.swift */; };
-		94CAFDFD275B4B460040C3B1 /* RecipientFirstNameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFDFC275B4B460040C3B1 /* RecipientFirstNameCoordinator.swift */; };
 		94CAFDFF275B4B5E0040C3B1 /* RecipientFirstNameViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFDFE275B4B5E0040C3B1 /* RecipientFirstNameViewModelProtocol.swift */; };
 		94CAFE01275B4B790040C3B1 /* RecipientFirstNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE00275B4B790040C3B1 /* RecipientFirstNameViewModel.swift */; };
 		94CAFE03275B4B940040C3B1 /* RecipientFirstNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE02275B4B940040C3B1 /* RecipientFirstNameViewController.swift */; };
 		94CAFE07275B4BD10040C3B1 /* RecipientLastNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE06275B4BD10040C3B1 /* RecipientLastNameViewController.swift */; };
 		94CAFE0A275B4BF20040C3B1 /* RecipientLastNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE09275B4BF20040C3B1 /* RecipientLastNameViewModel.swift */; };
 		94CAFE0D275B4C100040C3B1 /* RecipientLastNameViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE0C275B4C100040C3B1 /* RecipientLastNameViewModelProtocol.swift */; };
-		94CAFE10275B4C2C0040C3B1 /* RecipientLastNameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE0F275B4C2C0040C3B1 /* RecipientLastNameCoordinator.swift */; };
 		94CAFE13275B4C440040C3B1 /* RecipientLastNameCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE12275B4C440040C3B1 /* RecipientLastNameCoordinatorDelegate.swift */; };
 		94CAFE17275B4C750040C3B1 /* RecipientCountrySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE16275B4C750040C3B1 /* RecipientCountrySelectionViewController.swift */; };
 		94CAFE1A275B4C9A0040C3B1 /* RecipientCountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE19275B4C9A0040C3B1 /* RecipientCountryCollectionViewCell.swift */; };
 		94CAFE1C275B4CB00040C3B1 /* RecipientCountryCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE1B275B4CB00040C3B1 /* RecipientCountryCollectionViewCellModel.swift */; };
 		94CAFE1F275B4CD30040C3B1 /* RecipientCountrySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE1E275B4CD30040C3B1 /* RecipientCountrySelectionViewModel.swift */; };
 		94CAFE22275B4CF20040C3B1 /* RecipientCountrySelectionViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE21275B4CF20040C3B1 /* RecipientCountrySelectionViewModelProtocol.swift */; };
-		94CAFE25275B4D0B0040C3B1 /* RecipientCountrySelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE24275B4D0B0040C3B1 /* RecipientCountrySelectionCoordinator.swift */; };
 		94CAFE28275B4D240040C3B1 /* RecipientCountrySelectionCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE27275B4D240040C3B1 /* RecipientCountrySelectionCoordinatorDelegate.swift */; };
 		94CAFE2D275B4D770040C3B1 /* RecipientPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE2C275B4D770040C3B1 /* RecipientPhoneNumberViewController.swift */; };
 		94CAFE30275B4D930040C3B1 /* RecipientPhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE2F275B4D930040C3B1 /* RecipientPhoneNumberViewModel.swift */; };
 		94CAFE33275B4DB20040C3B1 /* RecipientPhoneNumberViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE32275B4DB20040C3B1 /* RecipientPhoneNumberViewModelProtocol.swift */; };
-		94CAFE36275B4DC90040C3B1 /* RecipientPhoneNumberCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE35275B4DC90040C3B1 /* RecipientPhoneNumberCoordinator.swift */; };
 		94CAFE39275B4DE10040C3B1 /* RecipientPhoneNumberCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE38275B4DE10040C3B1 /* RecipientPhoneNumberCoordinatorDelegate.swift */; };
 		94CAFE3D275B4E180040C3B1 /* TransferValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE3C275B4E180040C3B1 /* TransferValueViewController.swift */; };
 		94CAFE40275B4E460040C3B1 /* TransferValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE3F275B4E460040C3B1 /* TransferValueViewModel.swift */; };
 		94CAFE43275B4E660040C3B1 /* TransferValueViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE42275B4E660040C3B1 /* TransferValueViewModelProtocol.swift */; };
-		94CAFE46275B4E890040C3B1 /* TransferValueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE45275B4E890040C3B1 /* TransferValueCoordinator.swift */; };
 		94CAFE49275B4EAB0040C3B1 /* TransferValueCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE48275B4EAB0040C3B1 /* TransferValueCoordinatorDelegate.swift */; };
 		94CAFE4C275B4ECE0040C3B1 /* OpenExchangeRatesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE4B275B4ECE0040C3B1 /* OpenExchangeRatesEndpoint.swift */; };
 		94CAFE4F275B4F1D0040C3B1 /* RecipientCountryCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAFE4E275B4F1D0040C3B1 /* RecipientCountryCollectionViewManager.swift */; };
@@ -78,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		945B2A2527FE79EA00045721 /* MainCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorTests.swift; sourceTree = "<group>"; };
+		945B2A2927FE91CB00045721 /* RecipientFirstNameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameViewModelTests.swift; sourceTree = "<group>"; };
+		945B2A2C27FEB98400045721 /* RecipientLastNameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameViewModelTests.swift; sourceTree = "<group>"; };
 		94CAFD58275B458B0040C3B1 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CAFD5B275B458B0040C3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CAFD5D275B458B0040C3B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,31 +107,26 @@
 		94CAFDB3275B4A090040C3B1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		94CAFDB5275B4A330040C3B1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		94CAFDFA275B4B2B0040C3B1 /* RecipientFirstNameCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameCoordinatorDelegate.swift; sourceTree = "<group>"; };
-		94CAFDFC275B4B460040C3B1 /* RecipientFirstNameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameCoordinator.swift; sourceTree = "<group>"; };
 		94CAFDFE275B4B5E0040C3B1 /* RecipientFirstNameViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameViewModelProtocol.swift; sourceTree = "<group>"; };
 		94CAFE00275B4B790040C3B1 /* RecipientFirstNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameViewModel.swift; sourceTree = "<group>"; };
 		94CAFE02275B4B940040C3B1 /* RecipientFirstNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientFirstNameViewController.swift; sourceTree = "<group>"; };
 		94CAFE06275B4BD10040C3B1 /* RecipientLastNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameViewController.swift; sourceTree = "<group>"; };
 		94CAFE09275B4BF20040C3B1 /* RecipientLastNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameViewModel.swift; sourceTree = "<group>"; };
 		94CAFE0C275B4C100040C3B1 /* RecipientLastNameViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameViewModelProtocol.swift; sourceTree = "<group>"; };
-		94CAFE0F275B4C2C0040C3B1 /* RecipientLastNameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameCoordinator.swift; sourceTree = "<group>"; };
 		94CAFE12275B4C440040C3B1 /* RecipientLastNameCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientLastNameCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		94CAFE16275B4C750040C3B1 /* RecipientCountrySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountrySelectionViewController.swift; sourceTree = "<group>"; };
 		94CAFE19275B4C9A0040C3B1 /* RecipientCountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountryCollectionViewCell.swift; sourceTree = "<group>"; };
 		94CAFE1B275B4CB00040C3B1 /* RecipientCountryCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountryCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		94CAFE1E275B4CD30040C3B1 /* RecipientCountrySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountrySelectionViewModel.swift; sourceTree = "<group>"; };
 		94CAFE21275B4CF20040C3B1 /* RecipientCountrySelectionViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountrySelectionViewModelProtocol.swift; sourceTree = "<group>"; };
-		94CAFE24275B4D0B0040C3B1 /* RecipientCountrySelectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountrySelectionCoordinator.swift; sourceTree = "<group>"; };
 		94CAFE27275B4D240040C3B1 /* RecipientCountrySelectionCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountrySelectionCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		94CAFE2C275B4D770040C3B1 /* RecipientPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		94CAFE2F275B4D930040C3B1 /* RecipientPhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPhoneNumberViewModel.swift; sourceTree = "<group>"; };
 		94CAFE32275B4DB20040C3B1 /* RecipientPhoneNumberViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPhoneNumberViewModelProtocol.swift; sourceTree = "<group>"; };
-		94CAFE35275B4DC90040C3B1 /* RecipientPhoneNumberCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPhoneNumberCoordinator.swift; sourceTree = "<group>"; };
 		94CAFE38275B4DE10040C3B1 /* RecipientPhoneNumberCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientPhoneNumberCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		94CAFE3C275B4E180040C3B1 /* TransferValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferValueViewController.swift; sourceTree = "<group>"; };
 		94CAFE3F275B4E460040C3B1 /* TransferValueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferValueViewModel.swift; sourceTree = "<group>"; };
 		94CAFE42275B4E660040C3B1 /* TransferValueViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferValueViewModelProtocol.swift; sourceTree = "<group>"; };
-		94CAFE45275B4E890040C3B1 /* TransferValueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferValueCoordinator.swift; sourceTree = "<group>"; };
 		94CAFE48275B4EAB0040C3B1 /* TransferValueCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferValueCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		94CAFE4B275B4ECE0040C3B1 /* OpenExchangeRatesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenExchangeRatesEndpoint.swift; sourceTree = "<group>"; };
 		94CAFE4E275B4F1D0040C3B1 /* RecipientCountryCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCountryCollectionViewManager.swift; sourceTree = "<group>"; };
@@ -161,6 +157,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		945B2A2427FE64E000045721 /* MainCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				945B2A2527FE79EA00045721 /* MainCoordinatorTests.swift */,
+			);
+			path = MainCoordinator;
+			sourceTree = "<group>";
+		};
+		945B2A2727FE919C00045721 /* RecipientFirstName */ = {
+			isa = PBXGroup;
+			children = (
+				945B2A2927FE91CB00045721 /* RecipientFirstNameViewModelTests.swift */,
+			);
+			path = RecipientFirstName;
+			sourceTree = "<group>";
+		};
+		945B2A2827FE91AA00045721 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				945B2A2B27FEB96C00045721 /* RecipientLastName */,
+				945B2A2727FE919C00045721 /* RecipientFirstName */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		945B2A2B27FEB96C00045721 /* RecipientLastName */ = {
+			isa = PBXGroup;
+			children = (
+				945B2A2C27FEB98400045721 /* RecipientLastNameViewModelTests.swift */,
+			);
+			path = RecipientLastName;
+			sourceTree = "<group>";
+		};
+		9471F5AA27FD03CC0056716E /* RecipientFirstName */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipientFirstName;
+			sourceTree = "<group>";
+		};
 		94CAFD4F275B458B0040C3B1 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +230,9 @@
 		94CAFD71275B458D0040C3B1 /* PenguinPayTests */ = {
 			isa = PBXGroup;
 			children = (
+				945B2A2827FE91AA00045721 /* Features */,
+				945B2A2427FE64E000045721 /* MainCoordinator */,
+				9471F5AA27FD03CC0056716E /* RecipientFirstName */,
 				94CAFD72275B458D0040C3B1 /* PenguinPayTests.swift */,
 			);
 			path = PenguinPayTests;
@@ -323,7 +362,6 @@
 			isa = PBXGroup;
 			children = (
 				94CAFDF9275B4B170040C3B1 /* Delegates */,
-				94CAFDF8275B4B020040C3B1 /* Coordinator */,
 				94CAFDF7275B4AF90040C3B1 /* Protocols */,
 				94CAFDF6275B4AF20040C3B1 /* ViewModels */,
 				94CAFDF5275B4AED0040C3B1 /* Views */,
@@ -355,14 +393,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		94CAFDF8275B4B020040C3B1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				94CAFDFC275B4B460040C3B1 /* RecipientFirstNameCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		94CAFDF9275B4B170040C3B1 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,7 +405,6 @@
 			isa = PBXGroup;
 			children = (
 				94CAFE11275B4C380040C3B1 /* Delegates */,
-				94CAFE0E275B4C1C0040C3B1 /* Coordinator */,
 				94CAFE0B275B4C020040C3B1 /* Protocols */,
 				94CAFE08275B4BE00040C3B1 /* ViewModels */,
 				94CAFE05275B4BBD0040C3B1 /* Views */,
@@ -407,14 +436,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		94CAFE0E275B4C1C0040C3B1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				94CAFE0F275B4C2C0040C3B1 /* RecipientLastNameCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		94CAFE11275B4C380040C3B1 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,7 +448,6 @@
 			isa = PBXGroup;
 			children = (
 				94CAFE26275B4D1B0040C3B1 /* Delegates */,
-				94CAFE23275B4CFB0040C3B1 /* Coordinator */,
 				94CAFE20275B4CE10040C3B1 /* Protocols */,
 				94CAFE1D275B4CC90040C3B1 /* ViewModels */,
 				94CAFE15275B4C600040C3B1 /* Views */,
@@ -470,14 +490,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		94CAFE23275B4CFB0040C3B1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				94CAFE24275B4D0B0040C3B1 /* RecipientCountrySelectionCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		94CAFE26275B4D1B0040C3B1 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,7 +502,6 @@
 			isa = PBXGroup;
 			children = (
 				94CAFE37275B4DD90040C3B1 /* Delegates */,
-				94CAFE34275B4DBC0040C3B1 /* Coordinator */,
 				94CAFE31275B4DA00040C3B1 /* Protocols */,
 				94CAFE2E275B4D820040C3B1 /* ViewModels */,
 				94CAFE2B275B4D440040C3B1 /* Views */,
@@ -522,14 +533,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		94CAFE34275B4DBC0040C3B1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				94CAFE35275B4DC90040C3B1 /* RecipientPhoneNumberCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		94CAFE37275B4DD90040C3B1 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,7 +546,6 @@
 			children = (
 				94CAFE4A275B4EBD0040C3B1 /* Endpoint */,
 				94CAFE47275B4E9D0040C3B1 /* Delegates */,
-				94CAFE44275B4E710040C3B1 /* Coordinator */,
 				94CAFE41275B4E570040C3B1 /* Protocols */,
 				94CAFE3E275B4E230040C3B1 /* ViewModels */,
 				94CAFE3B275B4E050040C3B1 /* Views */,
@@ -573,14 +575,6 @@
 				94CAFE42275B4E660040C3B1 /* TransferValueViewModelProtocol.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		94CAFE44275B4E710040C3B1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				94CAFE45275B4E890040C3B1 /* TransferValueCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		94CAFE47275B4E9D0040C3B1 /* Delegates */ = {
@@ -745,9 +739,7 @@
 				94CAFE49275B4EAB0040C3B1 /* TransferValueCoordinatorDelegate.swift in Sources */,
 				94CAFDB2275B47B40040C3B1 /* OpenExchangeRates.swift in Sources */,
 				94CAFE01275B4B790040C3B1 /* RecipientFirstNameViewModel.swift in Sources */,
-				94CAFE25275B4D0B0040C3B1 /* RecipientCountrySelectionCoordinator.swift in Sources */,
 				94CAFE3D275B4E180040C3B1 /* TransferValueViewController.swift in Sources */,
-				94CAFDFD275B4B460040C3B1 /* RecipientFirstNameCoordinator.swift in Sources */,
 				94CAFE28275B4D240040C3B1 /* RecipientCountrySelectionCoordinatorDelegate.swift in Sources */,
 				94CAFD96275B46370040C3B1 /* UIColor.swift in Sources */,
 				94CAFE0A275B4BF20040C3B1 /* RecipientLastNameViewModel.swift in Sources */,
@@ -767,7 +759,6 @@
 				94CAFE33275B4DB20040C3B1 /* RecipientPhoneNumberViewModelProtocol.swift in Sources */,
 				94CAFDAA275B47390040C3B1 /* MainCoordinator.swift in Sources */,
 				94CAFE2D275B4D770040C3B1 /* RecipientPhoneNumberViewController.swift in Sources */,
-				94CAFE10275B4C2C0040C3B1 /* RecipientLastNameCoordinator.swift in Sources */,
 				94CAFDB0275B47A00040C3B1 /* Country.swift in Sources */,
 				94CAFE1F275B4CD30040C3B1 /* RecipientCountrySelectionViewModel.swift in Sources */,
 				94CAFE0D275B4C100040C3B1 /* RecipientLastNameViewModelProtocol.swift in Sources */,
@@ -775,13 +766,11 @@
 				94CAFD92275B460E0040C3B1 /* String.swift in Sources */,
 				94CAFDFB275B4B2B0040C3B1 /* RecipientFirstNameCoordinatorDelegate.swift in Sources */,
 				94CAFE43275B4E660040C3B1 /* TransferValueViewModelProtocol.swift in Sources */,
-				94CAFE36275B4DC90040C3B1 /* RecipientPhoneNumberCoordinator.swift in Sources */,
 				94CAFE22275B4CF20040C3B1 /* RecipientCountrySelectionViewModelProtocol.swift in Sources */,
 				94CAFD5E275B458B0040C3B1 /* SceneDelegate.swift in Sources */,
 				94CAFE39275B4DE10040C3B1 /* RecipientPhoneNumberCoordinatorDelegate.swift in Sources */,
 				94CAFDFF275B4B5E0040C3B1 /* RecipientFirstNameViewModelProtocol.swift in Sources */,
 				94CAFE07275B4BD10040C3B1 /* RecipientLastNameViewController.swift in Sources */,
-				94CAFE46275B4E890040C3B1 /* TransferValueCoordinator.swift in Sources */,
 				94CAFE4C275B4ECE0040C3B1 /* OpenExchangeRatesEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,7 +779,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945B2A2A27FE91CB00045721 /* RecipientFirstNameViewModelTests.swift in Sources */,
 				94CAFD73275B458D0040C3B1 /* PenguinPayTests.swift in Sources */,
+				945B2A2627FE79EA00045721 /* MainCoordinatorTests.swift in Sources */,
+				945B2A2D27FEB98400045721 /* RecipientLastNameViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

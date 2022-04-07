@@ -1,13 +1,10 @@
 //
-//  RecipientLastNameViewController.swift
-//  PenguinPay
-//
-//  Created by Felipe Moreira Tarrio Bassi on 04/12/21.
+//  ___FILEHEADER___
 //
 
 import UIKit
 
-class RecipientLastNameViewController: UIViewController {
+class ___VARIABLE_productName:identifier___ViewController: UIViewController {
 
     private static let separatorHeight: CGFloat = 1
     private static let buttonViewHeight: CGFloat = 96
@@ -32,7 +29,7 @@ class RecipientLastNameViewController: UIViewController {
         configuration.baseBackgroundColor = .systemGreen
         configuration.buttonSize = .large
         var attText = AttributedString.init(viewModel.buttonTitle)
-        attText.font = UIFont.systemFont(ofSize: .size(.small), weight: .bold)
+        attText.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
         configuration.attributedTitle = attText
 
         let button = UIButton(configuration: configuration, primaryAction: UIAction(handler: { [ unowned self ] _ in
@@ -43,7 +40,7 @@ class RecipientLastNameViewController: UIViewController {
         return button
     }()
     
-    private lazy var lastName: UITextField = { [weak self] in
+    private lazy var textField: UITextField = {
        let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = viewModel.textFieldPlaceholder
@@ -52,9 +49,9 @@ class RecipientLastNameViewController: UIViewController {
         return textField
     }()
 
-    private var viewModel: RecipientLastNameViewModelProtocol
+    private var viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol
     
-    init(viewModel: RecipientLastNameViewModelProtocol) {
+    init(viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -98,11 +95,11 @@ class RecipientLastNameViewController: UIViewController {
             nextStepButton.bottomAnchor.constraint(equalTo: buttonView.bottomAnchor, constant: -.spacing(.medium))
         ])
         
-        view.addSubview(lastName)
+        view.addSubview(textField)
         NSLayoutConstraint.activate([
-            lastName.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .spacing(.medium)),
-            lastName.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: .spacing(.medium)),
-            lastName.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -.spacing(.medium))
+            textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .spacing(.medium)),
+            textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: .spacing(.medium)),
+            textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -.spacing(.medium))
         ])
     }
     
@@ -118,14 +115,14 @@ class RecipientLastNameViewController: UIViewController {
     }
 }
 
-extension RecipientLastNameViewController: UITextFieldDelegate {
+extension ___VARIABLE_productName:identifier___ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        guard let unwrappedText = textField.text else { return textField.resignFirstResponder() }
-        viewModel.didFillLastName(unwrappedText)
+        // guard let unwrappedText = textField.text else { return textField.resignFirstResponder() }
+        // viewModel.didFillLastName(unwrappedText)
         return textField.resignFirstResponder()
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return viewModel.validateLastName(string)
+        return true
     }
 }

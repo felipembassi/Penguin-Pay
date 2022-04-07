@@ -10,50 +10,60 @@ import UIKit
 class MainCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
-
-    var recipient: Recipient?
+    
+    lazy var recipientFirstNameViewModel: RecipientFirstNameViewModelProtocol = RecipientFirstNameViewModel(coordinatorDelegate: self)
+    
+    lazy var recipientLastNameViewModel: RecipientLastNameViewModelProtocol = RecipientLastNameViewModel(coordinatorDelegate: self)
+    
+    lazy var recipientCountrySelectionViewModel: RecipientCountrySelectionViewModelProtocol = RecipientCountrySelectionViewModel(coordinatorDelegate: self)
+    
+    lazy var dataSource: RecipientCountryCollectionViewManager = RecipientCountryCollectionViewManager(viewModel: recipientCountrySelectionViewModel)
+    
+    var recipientPhoneNumberViewModel: RecipientPhoneNumberViewModelProtocol?
+    
+    var transferValueViewModel: TransferValueViewModelProtocol?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     func start() {
-        let child = RecipientFirstNameCoordinator(navigationController: navigationController, parentCoordinatorDelegate: self)
-        childCoordinators.append(child)
-        child.start()
+        let viewController = RecipientFirstNameViewController(viewModel: recipientFirstNameViewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 
 
 extension MainCoordinator: RecipientFirstNameCoordinatorDelegate {
+    
     func viewModelRecipientFirstNameNextStep(_ viewModel: RecipientFirstNameViewModel) {
-        let child = RecipientLastNameCoordinator(navigationController: navigationController, parentCoordinatorDelegate: self)
-        childCoordinators.append(child)
-        child.start()
+        let viewController = RecipientLastNameViewController(viewModel: recipientLastNameViewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 
 extension MainCoordinator: RecipientLastNameCoordinatorDelegate {
     func viewModelRecipientLastNameNextStep(_ viewModel: RecipientLastNameViewModel) {
-        let child = RecipientCountrySelectionCoordinator(navigationController: navigationController, parentCoordinatorDelegate: self)
-        childCoordinators.append(child)
-        child.start()
+        let viewController = RecipientCountrySelectionViewController(viewModel: recipientCountrySelectionViewModel, collectionViewManager: dataSource)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 
 extension MainCoordinator: RecipientCountrySelectionCoordinatorDelegate {
     func viewModelRecipientCountrySelection(_ viewModel: RecipientCountrySelectionViewModel, didSelectCountry country: Country) {
-        let child = RecipientPhoneNumberCoordinator(navigationController: navigationController, parentCoordinatorDelegate: self, country: country)
-        childCoordinators.append(child)
-        child.start()
+        recipientPhoneNumberViewModel = RecipientPhoneNumberViewModel(coordinatorDelegate: self, country: country)
+        guard let unwrappedRecipientPhoneNumberViewModelviewModel = recipientPhoneNumberViewModel else { return }
+        let viewController = RecipientPhoneNumberViewController(viewModel: unwrappedRecipientPhoneNumberViewModelviewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 
 extension MainCoordinator: RecipientPhoneNumberCoordinatorDelegate {
     func viewModelRecipientPhoneNumberFillPhoneNumber(_ viewModel: RecipientPhoneNumberViewModel, for country: Country) {
-        let child = TransferValueCoordinator(navigationController: navigationController, parentCoordinatorDelegate: self, country: country)
-        childCoordinators.append(child)
-        child.start()
+        transferValueViewModel = TransferValueViewModel(coordinatorDelegate: self, country: country)
+        guard let unwrappedTransferValueViewModel = transferValueViewModel else { return }
+        let viewController = TransferValueViewController(viewModel: unwrappedTransferValueViewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 

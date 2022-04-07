@@ -8,17 +8,16 @@
 import UIKit
 
 class RecipientCountrySelectionCoordinator: Coordinator {
-    weak var parentCoordinatorDelegate: RecipientCountrySelectionCoordinatorDelegate?
+    var viewModel: RecipientCountrySelectionViewModelProtocol
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
-    init(navigationController: UINavigationController, parentCoordinatorDelegate: RecipientCountrySelectionCoordinatorDelegate?) {
+    init(navigationController: UINavigationController, viewModel: RecipientCountrySelectionViewModelProtocol) {
         self.navigationController = navigationController
-        self.parentCoordinatorDelegate = parentCoordinatorDelegate
+        self.viewModel = viewModel
     }
     
     func start() {
-        let viewModel = RecipientCountrySelectionViewModel(coordinatorDelegate: parentCoordinatorDelegate)
         let dataSource = RecipientCountryCollectionViewManager(viewModel: viewModel)
         let viewController = RecipientCountrySelectionViewController(viewModel: viewModel, collectionViewManager: dataSource)
         
